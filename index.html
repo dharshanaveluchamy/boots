@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: orange; 
+      color: #333; 
+      padding-top: 20px;
+    }
+    .container-fluid {
+      padding-bottom: 20px;
+    }
+    .section-title {
+      padding-bottom: 20px; 
+    }
+    .nav-link {
+      color: green;
+    }
+    .nav-link.active {
+      font-weight: bold;
+    }
+    .nav-pills .nav-link {
+      border-radius: 0;
+    }
+    .heading-bg {
+      background-color: red; 
+      padding: 10px; 
+      text-align: center;
+      color: #fff; 
+    }
+    .profile-img {
+      border-radius: 50%; 
+    }
+    
+    table {
+      border: 1px solid #dee2e6;
+    }
+  
+    table thead th {
+      border-bottom: 2px solid #dee2e6;
+    }
+    
+    table tbody td {
+      border-bottom: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="p-3 mb-2 bg-warning text-white text-center heading-bg">
+      <h1 class="display-4">BIODATA</h1> 
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="text-center">
+            <img src="Dharsana_page-0001.png" width="200px" height="200px" class="img-fluid rounded-circle profile-img mb-3" alt="Profile Image">
+            <h2 class="h4">DHARSHANA V</h2>
+            <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="objective-tab" data-bs-toggle="pill" href="#objective" role="tab" aria-controls="objective" aria-selected="true">OBJECTIVE</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="edu-tab" data-bs-toggle="pill" href="#edu" role="tab" aria-controls="edu" aria-selected="false">EDUCATIONAL DETAILS</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="interest-tab" data-bs-toggle="pill" href="#interest" role="tab" aria-controls="interest" aria-selected="false">AREA OF INTERESTS</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="paper-tab" data-bs-toggle="pill" href="#paper" role="tab" aria-controls="paper" aria-selected="false">PAPER/PROJECT PRESENTATIONS</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="skills-tab" data-bs-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false">SKILL SET</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="collab-tab" data-bs-toggle="pill" href="#collab" role="tab" aria-controls="collab" aria-selected="false">INDUSTRIAL COLLABORATION</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="memb-tab" data-bs-toggle="pill" href="#memb" role="tab" aria-controls="memb" aria-selected="false">MEMBERSHIPS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="objective" role="tabpanel" aria-labelledby="objective-tab">
+              <h3 class="section-title">OBJECTIVE</h3>
+              <p class="lead">To be continued and efficient in my work and to enhance the growth of the organization by improving and applying my competency at work.</p>
+            </div>
+            <div class="tab-pane fade" id="edu" role="tabpanel" aria-labelledby="edu-tab">
+              <h3 class="section-title">EDUCATIONAL DETAILS</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Name of the Degree</th>
+                    <th>Name of the School</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SSLC</td>
+                    <td>Akshaya academy</td>
+                    <td>2020</td>
+                    <td>91.6%</td>
+                  </tr>
+                  <tr>
+                    <td>HSC</td>
+                    <td>Akshaya academy</td>
+                    <td>2022</td>
+                    <td>79.7%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="interest" role="tabpanel" aria-labelledby="interest-tab">
+              <h3 class="section-title">AREA OF INTERESTS</h3>
+              <p>Cloud computing, DBMS, C</p>
+            </div>
+            <div class="tab-pane fade" id="paper" role="tabpanel" aria-labelledby="paper-tab">
+              <h3 class="section-title">PAPER/PROJECT PRESENTATIONS</h3>
+              <div class="left-align">
+                <p>Won Third prize in Hackathon on "Android app development" conducted by IT Association in Kongu engineering college in 2024.</p>
+                <p>Participated in App development competition conducted by MADC club in Kongu engineering college in 2023.</p>
+                <p>Participated in Paper presentation in Sri Ramakrishna Institute of Technology on "CNN" in 2023.</p>
+                <p>Done a paper on "Internet Of Things" conducted by EIE Association in Kongu engineering college in 2023.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+              <h3 class="section-title">SKILL SET</h3>
+              <p>C, Data structure using C, Python</p>
+            </div>
+            <div class="tab-pane fade" id="collab" role="tabpanel" aria-labelledby="collab-tab">
+              <h3 class="section-title">INDUSTRIAL COLLABORATION</h3>
+              <ul style="list-style-type: square; padding-left: 20px;">
+                <li>Accomplished Inplant training in NxtGen Instruments on "Android app development".</li>
+                <li>Completed one month virtual internship in Codsoft on "App development" using flutter.</li>
+                <li>Completed Industrial visit to ATEES Company in Trissur.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="memb" role="tabpanel" aria-labelledby="memb-tab">
+              <h3 class="section-title">MEMBERSHIPS</h3>
+              <ul style="list-style-type: square; padding-left: 20px;">
+                <li>Executive member of Institute of Electrical and Electronics Engineers (IEEE).</li>
+                <li>Participated in various volunteering events and activities in Self Development Club at Kongu Engineering College.</li>
+                <li>Volunteering at YESIST'24 organized by IEEE.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.nav-link').click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('.tab-pane').removeClass('show active');
+        $(target).addClass('show active');
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+        $('html, body').animate({
+          scrollTop: $(target).offset().top - 100 
+        }, 'slow');
+      });
+    });
+  </script>
+</body>
+</html>
